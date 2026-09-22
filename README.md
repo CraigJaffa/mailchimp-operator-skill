@@ -1,6 +1,15 @@
 # Mailchimp Operator Skill
 
-This folder is a portable, account-neutral Codex skill based on hands-on classic automation and native-builder operations. The skill is in [`mailchimp-operator/`](mailchimp-operator/SKILL.md). It contains no client campaign IDs, subscriber lists, API keys, exported emails or offer terms.
+This folder is a portable, account-neutral agent skill based on hands-on Mailchimp operations. Version 2 adds the wider campaign system around Mailchimp: registration pages, webhooks and imports, entry groups, reminder sequences, replay pages and expiry checks. The skill is in [`mailchimp-operator/`](mailchimp-operator/SKILL.md). It contains no client campaign IDs, subscriber lists, API keys, exported emails or offer terms.
+
+## What it helps with
+
+- Inventory and verify classic automations and regular campaigns.
+- Preserve editable Image, Text and Button blocks.
+- Check the actual audience, queues, consent and prior sends.
+- Replicate campaigns without carrying old settings into a new event.
+- Test emails sequentially and activate only approved steps.
+- Map an event campaign from registration through replay and follow-up.
 
 ## Share with colleagues
 
