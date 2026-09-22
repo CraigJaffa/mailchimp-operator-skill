@@ -18,3 +18,5 @@ This folder is a portable, account-neutral agent skill based on hands-on Mailchi
 3. For a public GitHub repository, use this `share/` directory as the repository root. Review the public diff and repository visibility before pushing. Keep private client playbooks and campaign-specific scripts in a separate access-controlled repository.
 
 The skill teaches a process; it does not grant Mailchimp access or authority to send. Recheck Mailchimp's current UI and API documentation for the target account. The observed API/native-builder behaviour comes from particular classic automations in September 2026 and should be validated before applying it elsewhere.
+
+Future operator tooling and acceptance tests are tracked in [`ROADMAP.md`](ROADMAP.md).
