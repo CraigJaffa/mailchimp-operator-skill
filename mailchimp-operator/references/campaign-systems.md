@@ -37,9 +37,47 @@ Treat the invite broadcasts, registration email, starting-soon workflow and post
 
 The last day invite often needs a different exclusion from earlier invites because registrants may also receive reminder emails. Verify the event-specific group is populated at registration before using it as an exclusion.
 
+### Monthly repeat of a webinar (lessons from a one-month handover, Sep 2026)
+
+**Fill every fact you can know**
+- When the build is being handed to a colleague, the owner wants every email ready to send. Don't leave square-bracket notes or questions for other people inside the copy.
+- Fill every fact you can know or reasonably infer:
+  - presenters, event day and time, and session length from the plan
+  - offer deadline and cohort date
+  - guarantee and offer wording from last month's live email, when the offer is unchanged
+- Write day-relative wording for each email's send day, for example "TOMORROW, Sunday, midnight UK" on Saturday and "TONIGHT at midnight UK" on Sunday.
+
+**Don't placeholder fixed links**
+- The replay page and the checkout link stayed the same every month in one account (`/replay/`, `/checkouts/<code>/`). Replacing them with placeholders created rework. Change a link only if the owner says it moves.
+
+**Lines that depend on the live event**
+- For timestamps, a quote or a highlight, write the line from the planned run order, so it is true if the session goes as planned. For example, use a "What's in the replay" list instead of timestamps.
+- Remove quotes from people who won't attend.
+- List which emails to recheck if the session changes. Don't leave instructions inside the email.
+- If placeholders really are needed (for example a Zoom link that doesn't exist yet), visible capitals in brackets plus a holding URL on the company domain with a fragment (`https://example.com/#ZOOM-LINK`) were accepted by Mailchimp and easy to search for later. Fill them as soon as the facts exist.
+
+**Countdown timer**
+- Duplicate last month's timer in the timer service (for example Sendtric's duplicate icon on the timer list), so the colours and layout stay the same.
+- Rename it, set the end date, time and timezone in its configuration, and save.
+- Reload to check the name, date and timezone, and fetch the image URL to confirm it returns a GIF showing the right time remaining.
+- Then replace the old timer code wherever it appears.
+
+**Invites**
+- Replicate last month's sent invites as unscheduled drafts. Only an invite that used a countdown needs the image swapped.
+- The final same-day invite excludes the event's registrant group. After replicating, change that condition to the new month's group.
+- If the copy still carries last month's dates, put a clear marker such as "REWRITE BEFORE SENDING" in the internal title until it is updated.
+
 ### Cohort upsell
 
 Freeze the source cohort before building recipients. Exclude refunds, scholarships or other non-selling cases only from current authorised evidence. Later emails can target recipients of the first campaign and exclude buyers, but verify that the purchase tag is applied quickly and reliably. Confirm the offer, access terms, sales page, replay visibility and expiry before sending a test.
+
+Take the deadline from the live sales page, not from the brief. A page builder's countdown widget usually carries its absolute end in the page source (for example an Elementor countdown's `data-date` Unix timestamp, plus any expire action such as a redirect). Convert it to the audience's timezone. Then align three things with it: relative wording in the copy ("closes Sunday at midnight UK"), subjects and previews that mention a day, and any countdown image. A second timer on the same page (for example a fast-action bonus) may end much earlier than the offer.
+
+Make the emails match the live sales page item by item: component names, durations, which items are bonuses, prices and instalments. Where the page and an email differ, the page is the reference unless the owner says otherwise. When a colleague's asset (an infographic or slide) lists items the page does not, tell the operator and note that raising it may create page work; it does not always need to be fixed before sending.
+
+Access-duration rules can differ by component. In one account, lifetime access was allowed for courses and on-demand training but not for community, software or an evaluation platform. Confirm which components a rule covers before deleting every mention of a keyword; a blanket keyword removal once took out an allowed image that then had to be restored.
+
+When the first email depends on an event recording, schedule it only once the recording plays at the linked page, and write a fallback for a late upload. When the event date moves, follow the previous cohort's cadence and send times as the baseline (for example one email a day to the deadline), rename the drafts to the new dates, and check every day-relative phrase still reads correctly on its new send day.
 
 ### Cohort downsell alongside an existing sequence
 

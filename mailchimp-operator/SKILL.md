@@ -1,7 +1,7 @@
 ---
 name: mailchimp-operator
-description: Inspect, edit and verify Mailchimp campaigns or classic automation emails through the native builder and Marketing API. Use for campaign maintenance, audience/queue checks, test sends and controlled activation.
-version: 2.1.0
+description: Inspect, edit and verify Mailchimp campaigns or classic automation emails through the native builder and Marketing API. Use for campaign maintenance, duplicating a monthly event (workflows, invites, timers), unscheduling and rescheduling plans, audience/queue checks, test sends and controlled activation.
+version: 2.3.0
 ---
 
 # Mailchimp Operator
@@ -12,7 +12,7 @@ Work from the user's exact campaign and authorised scope. A content approval, te
 
 - For a classic automation, read [references/classic-automation.md](references/classic-automation.md) before editing timing, triggers, filters, queues or states.
 - For content, images, GIFs, plain text and native design changes, read [references/native-content.md](references/native-content.md).
-- For API or dialog test sends and live delivery, read [references/delivery.md](references/delivery.md).
+- For unscheduling, API or dialog test sends and live delivery, read [references/delivery.md](references/delivery.md).
 - For broadcast replication, recipient settings or performance reports, read [references/campaigns-and-reports.md](references/campaigns-and-reports.md).
 - For an event campaign spanning forms, integrations, registration, reminders and follow-up, read [references/campaign-systems.md](references/campaign-systems.md) before changing any one component.
 
@@ -26,6 +26,10 @@ Work from the user's exact campaign and authorised scope. A content approval, te
 6. Keep a compact receipt: target identity, time and timezone, approved field changes, backup location, readback result, test-recipient acceptance if applicable, final status and unresolved audience or delivery risks. Exclude secrets and unnecessary subscriber data.
 
 Use the smallest available capability. Read-only API calls help inventory and verify; use Mailchimp's editor for native blocks. A campaign-specific, allowlisted adapter can handle supported metadata or plain-text fields when readback proves native HTML and unrelated settings unchanged. Do not assume one workflow's successful API operation generalises to another campaign type or builder.
+
+When you audit assets made by colleagues (copy, slides, infographics, landing pages), report every issue to the operator, but sort each into "fix before send" (it could break a send, mislead a buyer about price, dates or what they get, or create an unaccepted compliance problem) and "could let slide". For each "could let slide" item, say what raising it with the team is likely to cost the operator in follow-up work. Do not turn every mismatch into a request to the team; park minor ones in the campaign notes for the next round unless the operator chooses otherwise.
+
+When you hand a build to a colleague, make the emails ready to send. Fill every fact that is known or can be inferred from the plan and from last month's live emails, and keep links that never change. Leave no notes for other people inside the copy; list the few lines to recheck after the event in the run sheet instead (see campaign-systems). The owner may start, pause or retrigger workflows while you work, so re-read statuses before each write and before reporting.
 
 Stop dependent writes if identity, recipient eligibility, editability, actual saved content or delivery state is uncertain. Do not blind-retry a test send, live send or a UI action that may have succeeded before a timeout. Inspect current state first.
 
