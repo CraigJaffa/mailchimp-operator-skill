@@ -1,7 +1,7 @@
 ---
 name: mailchimp-operator
 description: Inspect, edit and verify Mailchimp campaigns or classic automation emails through the native builder and Marketing API. Use for campaign maintenance, audience/queue checks, test sends and controlled activation.
-version: 2.0.0
+version: 2.1.0
 ---
 
 # Mailchimp Operator
@@ -11,8 +11,8 @@ Work from the user's exact campaign and authorised scope. A content approval, te
 ## Choose the path
 
 - For a classic automation, read [references/classic-automation.md](references/classic-automation.md) before editing timing, triggers, filters, queues or states.
-- For content and native design changes, read [references/native-content.md](references/native-content.md).
-- For tests or live delivery, read [references/delivery.md](references/delivery.md).
+- For content, images, GIFs, plain text and native design changes, read [references/native-content.md](references/native-content.md).
+- For API or dialog test sends and live delivery, read [references/delivery.md](references/delivery.md).
 - For broadcast replication, recipient settings or performance reports, read [references/campaigns-and-reports.md](references/campaigns-and-reports.md).
 - For an event campaign spanning forms, integrations, registration, reminders and follow-up, read [references/campaign-systems.md](references/campaign-systems.md) before changing any one component.
 

@@ -41,6 +41,14 @@ The last day invite often needs a different exclusion from earlier invites becau
 
 Freeze the source cohort before building recipients. Exclude refunds, scholarships or other non-selling cases only from current authorised evidence. Later emails can target recipients of the first campaign and exclude buyers, but verify that the purchase tag is applied quickly and reliably. Confirm the offer, access terms, sales page, replay visibility and expiry before sending a test.
 
+### Cohort downsell alongside an existing sequence
+
+When the owner already runs a proven sequence, keep their emails on their usual days and fit the new emails into the gaps. That keeps a baseline to compare against and respects their process. Leave the owner's emails as they are unless the operator approves specific changes; list stale facts (old codes, dates, features) as questions for the owner instead of rewriting them. Check that every email in the sequence uses the same offer code and deadline.
+
+Confirm product rules with the owner before relying on a slide or brief. Planning documents can carry superseded rules, such as a waiting period the owner never meant to enforce, and a mistaken rule in the copy can undo the whole angle. Keep regulated or capital-related claims to wording the owner has approved.
+
+Where emails promote a paid membership that also includes an assessment or evaluation route, present the membership's ongoing value first and the route as included at no extra cost. Leading with evaluation can make the product read as a fee to be assessed.
+
 ## Handoff record
 
 For a colleague taking over, provide one current manifest rather than a screen recording alone. Include the campaign purpose, owners, accounts needed, dependency map, exact target cohort, source templates, event and offer facts, all campaign IDs, approved final states, activation date and time, test recipients, evidence locations and unresolved decisions. Mark each item as verified, pending or historical.
